@@ -10,6 +10,7 @@
   <Import Project="..\..\..\..\sharedproject.props" />
 
   <ItemGroup>
+    <PackageReference Include="AspNetCore.HealthChecks.Elasticsearch" Version="2.2.2" />
     <PackageReference Include="AspNetCore.HealthChecks.MongoDb" Version="2.2.2" />
     <PackageReference Include="AspNetCore.HealthChecks.MySql" Version="2.2.0" />
     <PackageReference Include="AspNetCore.HealthChecks.NpgSql" Version="2.2.0" />
