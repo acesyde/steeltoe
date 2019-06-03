@@ -26,7 +26,7 @@ namespace Steeltoe.CloudFoundry.Connector.ElasticSearch.Test
             // act
             var interfaceType = ElasticSearchTypeLocator.IElasticClient;
             var implementationType = ElasticSearchTypeLocator.ElasticClient;
-            var elasticSearchUrl = ElasticSearchTypeLocator.ElasticSearchConnectionSettings;
+            var elasticSearchUrl = ElasticSearchTypeLocator.ElasticSearchUrl;
 
             // assert
             Assert.NotNull(interfaceType);

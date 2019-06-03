@@ -88,7 +88,7 @@ namespace Steeltoe.CloudFoundry.Connector.Test
             var inst = CloudFoundryServiceInfoCreator.Instance(config);
             Assert.NotNull(inst);
             Assert.NotNull(inst.Factories);
-            Assert.Equal(12, inst.Factories.Count);
+            Assert.Equal(11, inst.Factories.Count);
         }
 
         [Fact]
@@ -485,7 +485,7 @@ namespace Steeltoe.CloudFoundry.Connector.Test
             var config = builder.Build();
             var creator = CloudFoundryServiceInfoCreator.Instance(config);
             Assert.NotNull(creator.ServiceInfos);
-            Assert.Equal(5, creator.ServiceInfos.Count);
+            Assert.Equal(4, creator.ServiceInfos.Count);
 
             var result1 = creator.GetServiceInfos<RedisServiceInfo>();
             Assert.NotNull(result1);

@@ -98,7 +98,7 @@ namespace Steeltoe.CloudFoundry.Connector.ElasticSearch
             }
             else
             {
-                healthChecksBuilder.AddElasticsearch(elasticSearchConnectorOptions.ToString());
+                healthChecksBuilder.AddElasticsearch(clientFactory.CreateConnectionString());
             }
 
             Type type = ConnectorHelpers.FindType(ElasticSearchTypeLocator.Assemblies, ElasticSearchTypeLocator.ElasticSearchConnectionInfo);

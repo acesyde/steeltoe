@@ -50,11 +50,11 @@ namespace Steeltoe.CloudFoundry.ConnectorAutofac
                 ? config.GetSingletonServiceInfo<ElasticSearchServiceInfo>()
                 : config.GetRequiredServiceInfo<ElasticSearchServiceInfo>(serviceName);
 
-            var elasticSearchConnectorOptions = new ElasticSearchConnectorOptions(config);
-            var clientFactory = new ElasticSearchConnectorFactory(info, elasticSearchConnectorOptions, ElasticSearchTypeLocator.ElasticClient);
-            var urlFactory = new ElasticSearchConnectorFactory(info, elasticSearchConnectorOptions, ElasticSearchTypeLocator.ElasticSearchConnectionSettings);
+            var mongoOptions = new ElasticSearchConnectorOptions(config);
+            var clientFactory = new ElasticSearchConnectorFactory(info, mongoOptions, ElasticSearchTypeLocator.ElasticClient);
+            var urlFactory = new ElasticSearchConnectorFactory(info, mongoOptions, ElasticSearchTypeLocator.ElasticSearchUrl);
 
-            container.Register(c => urlFactory.Create(null)).As(ElasticSearchTypeLocator.ElasticSearchConnectionSettings);
+            container.Register(c => urlFactory.Create(null)).As(ElasticSearchTypeLocator.ElasticSearchUrl);
             container.Register(c => new ElasticSearchHealthContributor(clientFactory, c.ResolveOptional<ILogger<ElasticSearchHealthContributor>>())).As<IHealthContributor>();
 
             return container.Register(c => clientFactory.Create(null)).As(ElasticSearchTypeLocator.IElasticClient, ElasticSearchTypeLocator.ElasticClient);

@@ -31,11 +31,11 @@ namespace Steeltoe.CloudFoundry.Connector.ElasticSearch
                 throw new ArgumentNullException(nameof(configuration));
             }
 
-            Type implementationType = ElasticSearchTypeLocator.ElasticClient;
+            Type mongoDbImplementationType = ElasticSearchTypeLocator.ElasticClient;
             var info = configuration.GetSingletonServiceInfo<ElasticSearchServiceInfo>();
 
             ElasticSearchConnectorOptions connectorOptions = new ElasticSearchConnectorOptions(configuration);
-            ElasticSearchConnectorFactory factory = new ElasticSearchConnectorFactory(info, connectorOptions, implementationType);
+            ElasticSearchConnectorFactory factory = new ElasticSearchConnectorFactory(info, connectorOptions, mongoDbImplementationType);
             return new ElasticSearchHealthContributor(factory, logger);
         }
 
@@ -56,10 +56,9 @@ namespace Steeltoe.CloudFoundry.Connector.ElasticSearch
             var result = new HealthCheckResult();
             try
             {
-                // TODOS
-                var pingResponse = ConnectorHelpers.Invoke(ElasticSearchTypeLocator.PingMethod, _client, null);
+                var databases = ConnectorHelpers.Invoke(ElasticSearchTypeLocator.ListDatabasesMethod, _client, new object[] { new CancellationTokenSource(5000) });
 
-                if (pingResponse == null)
+                if (databases == null)
                 {
                     throw new ConnectorException("Failed to open ElasticSearch connection!");
                 }
