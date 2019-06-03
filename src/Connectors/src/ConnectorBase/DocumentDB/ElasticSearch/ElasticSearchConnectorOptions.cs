@@ -105,5 +105,11 @@ namespace Steeltoe.CloudFoundry.Connector.ElasticSearch
                 return sb.ToString().TrimEnd('&');
             }
         }
+
+        public object ToElasticSearchOptions()
+        {
+            var instance = Activator.CreateInstance(ElasticSearchTypeLocator.ElasticSearchConnectionSettings, new Uri(ToString()));
+            return instance;
+        }
     }
 }

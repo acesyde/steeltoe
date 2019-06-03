@@ -19,10 +19,10 @@ namespace Steeltoe.CloudFoundry.Connector.ElasticSearch
 {
     public class ElasticSearchProviderConfigurer
     {
-        public string Configure(ElasticSearchServiceInfo si, ElasticSearchConnectorOptions configuration)
+        public ElasticSearchConnectorOptions Configure(ElasticSearchServiceInfo si, ElasticSearchConnectorOptions configuration)
         {
             UpdateConfiguration(si, configuration);
-            return configuration.ToString();
+            return configuration;
         }
 
         public void UpdateConfiguration(ElasticSearchServiceInfo si, ElasticSearchConnectorOptions configuration)

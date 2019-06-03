@@ -12,6 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using System.Linq;
+
 namespace Steeltoe.CloudFoundry.Connector.ElasticSearch.Test
 {
     using System;
@@ -117,15 +119,15 @@ namespace Steeltoe.CloudFoundry.Connector.ElasticSearch.Test
 
             // Act
             services.AddElasticSearch(config);
-            var service = services.BuildServiceProvider().GetService<MongoClient>();
+            var service = services.BuildServiceProvider().GetService<ElasticClient>();
 
             // Assert
             Assert.NotNull(service);
-            var connSettings = service.Settings;
-            Assert.Single((IEnumerable)connSettings.Servers);
-            Assert.Equal("d8790b7-mongodb-0.node.dc1.a9s-mongodb-consul", connSettings.Server.Host);
-            Assert.Equal(27017, connSettings.Server.Port);
-            Assert.Equal("a9s-brk-usr-377ad48194cbf0452338737d7f6aa3fb6cdabc24", connSettings.Credential.Username);
+            var connSettings = service.ConnectionSettings;
+            Assert.Single(connSettings.ConnectionPool.Nodes as IEnumerable);
+            Assert.Equal("d8790b7-mongodb-0.node.dc1.a9s-mongodb-consul", connSettings.ConnectionPool.Nodes.First().Uri.Host);
+            Assert.Equal(9200, connSettings.ConnectionPool.Nodes.First().Uri.Port);
+//            Assert.Equal("a9s-brk-usr-377ad48194cbf0452338737d7f6aa3fb6cdabc24", connSettings.Credential.Username);
         }
 
         [Fact]

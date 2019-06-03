@@ -38,11 +38,12 @@ namespace Steeltoe.CloudFoundry.Connector.ElasticSearch
 
         public virtual object Create(IServiceProvider provider)
         {
-            var connectionString = CreateConnectionString();
+            var connectionOptions = _configurer.Configure(_info, _config);
             object result = null;
-            if (connectionString != null)
+
+            if (connectionOptions != null)
             {
-                result = CreateConnection(connectionString);
+                result = CreateConnection(connectionOptions.ToElasticSearchOptions());
             }
 
             if (result == null)
@@ -53,14 +54,9 @@ namespace Steeltoe.CloudFoundry.Connector.ElasticSearch
             return result;
         }
 
-        public virtual string CreateConnectionString()
+        public virtual object CreateConnection(object options)
         {
-            return _configurer.Configure(_info, _config);
-        }
-
-        public virtual object CreateConnection(string connectionString)
-        {
-            return ConnectorHelpers.CreateInstance(ConnectorType, new object[] { connectionString });
+            return ConnectorHelpers.CreateInstance(ConnectorType, new object[] { options });
         }
     }
 }

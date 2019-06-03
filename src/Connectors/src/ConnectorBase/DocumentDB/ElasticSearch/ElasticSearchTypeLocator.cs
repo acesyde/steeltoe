@@ -56,15 +56,19 @@ namespace Steeltoe.CloudFoundry.Connector.ElasticSearch
         public static Type ElasticClient => ConnectorHelpers.FindTypeOrThrow(Assemblies, ConnectionTypeNames, "ElasticClient", "an NEST driver");
 
         /// <summary>
-        /// Gets ElasticSearchUrl from Nest Library
+        /// Gets ConnectionSettings from Nest Library
         /// </summary>
         /// <exception cref="ConnectorException">When type is not found</exception>
-        public static Type ElasticSearchUrl => ConnectorHelpers.FindTypeOrThrow(Assemblies, ElasticSearchConnectionInfo, "ElasticSearchUrl", "an NEST driver");
+        public static Type ElasticSearchConnectionSettings => ConnectorHelpers.FindTypeOrThrow(Assemblies, ElasticSearchConnectionInfo, "ConnectionSettings", "an NEST driver");
 
         /// <summary>
         /// Gets a method that lists databases available in a ElasticSearchClient
         /// </summary>
-        public static MethodInfo ListDatabasesMethod => FindMethodOrThrow(ElasticClient, "ListDatabases", new Type[] { typeof(CancellationToken) });
+        public static MethodInfo PingMethod => FindMethodOrThrow(ElasticClient, "Ping", new[] { typeof(Func<,>).MakeGenericType(PingDescriptor, IPingRequest) });
+
+        private static Type PingDescriptor => ConnectorHelpers.FindTypeOrThrow(Assemblies, new[] {"Nest.PingDescriptor"}, "PingDescriptor", "");
+
+        private static Type IPingRequest => ConnectorHelpers.FindTypeOrThrow(Assemblies, new[] {"Nest.IPingRequest"}, "IPingRequest", "");
 
         private static MethodInfo FindMethodOrThrow(Type type, string methodName, Type[] parameters = null)
         {

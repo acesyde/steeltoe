@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.Rider2019.1/system/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.1/system/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_Connectors.-1554538391.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/.nuget/packages/mysql.data.entity/6.10.7/contentFiles/any/net452/app.config.transform" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/mysql.data.entity/6.10.7/contentFiles/any/net452/web.config.transform" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/mysql.data.entityframework/8.0.14/contentFiles/any/net452/app.config.transform" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/mysql.data.entityframework/8.0.14/contentFiles/any/net452/web.config.transform" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.1/build/_common/xunit.abstractions.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.1/build/_common/xunit.runner.reporters.net452.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.1/build/_common/xunit.runner.utility.net452.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.1/build/_common/xunit.runner.visualstudio.testadapter.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.1/build/netcoreapp1.0/xunit.runner.reporters.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.1/build/netcoreapp1.0/xunit.runner.utility.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.1/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
+    <e p="$PROJECT_DIR$/../../nuget.config" t="Include" />
+    <e p="$PROJECT_DIR$/../../sharedproject.props" t="Include" />
+    <e p="$PROJECT_DIR$/../../sharedtest.props" t="Include" />
+    <e p="$PROJECT_DIR$/../Common/src/Common" t="IncludeRecursive">
+      <e p="Configuration" t="Include">
+        <e p="ConfigurationValuesHelper.cs" t="Include" />
+        <e p="IConfigurationBuilderExtensions.cs" t="Include" />
+        <e p="PropertyPlaceHolderHelper.cs" t="Include" />
+      </e>
+      <e p="Diagnostics" t="Include">
+        <e p="DiagnosticHelpers.cs" t="Include" />
+        <e p="DiagnosticObserver.cs" t="Include" />
+        <e p="DiagnosticsManager.cs" t="Include" />
+        <e p="IDiagnosticObserver.cs" t="Include" />
+        <e p="IDiagnosticsManager.cs" t="Include" />
+        <e p="IPolledDiagnosticSource.cs" t="Include" />
+      </e>
+      <e p="Discovery" t="Include">
+        <e p="ConfigurationServiceInstance.cs" t="Include" />
+        <e p="ConfigurationServiceInstanceProvider.cs" t="Include" />
+        <e p="ConfigurationServiceInstanceProviderServiceCollectionExtensions.cs" t="Include" />
+        <e p="DiscoveryOptions.cs" t="Include" />
+        <e p="IDiscoveryClient.cs" t="Include" />
+        <e p="IDiscoveryClientOptions.cs" t="Include" />
+        <e p="IDiscoveryLifecycle.cs" t="Include" />
+        <e p="IDiscoveryRegistrationOptions.cs" t="Include" />
+        <e p="IServiceInstance.cs" t="Include" />
+        <e p="IServiceInstanceProvider.cs" t="Include" />
+        <e p="IServiceInstanceProviderExtensions.cs" t="Include" />
+        <e p="IServiceRegistry.cs" t="Include" />
+        <e p="SerializableIServiceInstance.cs" t="Include" />
+      </e>
+      <e p="Extensions" t="Include">
+        <e p="UriExtensions.cs" t="Include" />
+      </e>
+      <e p="HealthChecks" t="Include">
+        <e p="HealthCheckResult.cs" t="Include" />
+        <e p="HealthStatus.cs" t="Include" />
+        <e p="IHealthContributor.cs" t="Include" />
+      </e>
+      <e p="LoadBalancer" t="Include">
+        <e p="ILoadBalancer.cs" t="Include" />
+        <e p="RandomLoadBalancer.cs" t="Include" />
+        <e p="RoundRobinLoadBalancer.cs" t="Include" />
+      </e>
+      <e p="Net" t="Include">
+        <e p="HostInfo.cs" t="Include" />
+        <e p="INetOptions.cs" t="Include" />
+        <e p="InetUtils.cs" t="Include" />
+      </e>
+      <e p="Options" t="Include">
+        <e p="AbstractOptions.cs" t="Include" />
+      </e>
+      <e p="Platform.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="AssemblyInfo.cs" t="Include" />
+      </e>
+      <e p="Reflection" t="Include">
+        <e p="ReflectionHelpers.cs" t="Include" />
+      </e>
+      <e p="Steeltoe.Common.csproj" t="IncludeRecursive" />
+      <e p="Tasks" t="Include">
+        <e p="IApplicationTask.cs" t="Include" />
+      </e>
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netstandard2.0" t="Include">
+            <e p="Steeltoe.Common.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+    </e>
+    <e p="$PROJECT_DIR$/../Configuration/src/CloudFoundryBase" t="IncludeRecursive">
+      <e p="AbstractServiceOptions.cs" t="Include" />
+      <e p="CloudFoundryApplicationOptions.cs" t="Include" />
+      <e p="CloudFoundryConfigurationBuilderExtensions.cs" t="Include" />
+      <e p="CloudFoundryConfigurationProvider.cs" t="Include" />
+      <e p="CloudFoundryConfigurationSource.cs" t="Include" />
+      <e p="CloudFoundryEnvironmentSettingsReader.cs" t="Include" />
+      <e p="CloudFoundryMemorySettingsReader.cs" t="Include" />
+      <e p="CloudFoundryServicesOptions.cs" t="Include" />
+      <e p="Credential.cs" t="Include" />
+      <e p="CredentialConverter.cs" t="Include" />
+      <e p="ICloudFoundrySettingsReader.cs" t="Include" />
+      <e p="JsonStreamConfigurationProvider.cs" t="Include" />
+      <e p="JsonStreamConfigurationSource.cs" t="Include" />
+      <e p="Limits.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="AssemblyInfo.cs" t="Include" />
+      </e>
+      <e p="Service.cs" t="Include" />
+      <e p="Steeltoe.Extensions.Configuration.CloudFoundryBase.csproj" t="IncludeRecursive" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netstandard2.0" t="Include">
+            <e p="Steeltoe.Extensions.Configuration.CloudFoundryBase.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+    </e>
+    <e p="$PROJECT_DIR$/../Configuration/src/CloudFoundryCore" t="IncludeRecursive">
+      <e p="CloudFoundryHostBuilderExtensions.cs" t="Include" />
+      <e p="CloudFoundryServiceCollectionExtensions.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="AssemblyInfo.cs" t="Include" />
+      </e>
+      <e p="README.md" t="Include" />
+      <e p="Steeltoe.Extensions.Configuration.CloudFoundryCore.csproj" t="IncludeRecursive" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netstandard2.0" t="Include">
+            <e p="Steeltoe.Extensions.Configuration.CloudFoundryCore.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+    </e>
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="Connectors.sln" t="IncludeFlat" />
+      <e p="README.md" t="Include" />
+      <e p="Solution Items" t="Include" />
+      <e p="config" t="Include" />
+      <e p="dependencies" t="Include" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="src" t="Include">
+        <e p="Connector.EF6Autofac" t="IncludeRecursive">
+          <e p="MySqlDbContextContainerBuilderExtensions.cs" t="Include" />
+          <e p="SqlServerDbContextContainerBuilderExtensions.cs" t="Include" />
+          <e p="Steeltoe.CloudFoundry.Connector.EF6Autofac.csproj" t="IncludeRecursive" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netstandard2.0" t="Include">
+                <e p="Steeltoe.CloudFoundry.Connector.EF6Autofac.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Connector.EF6Core" t="IncludeRecursive">
+          <e p="MySqlDbContextServiceCollectionExtensions.cs" t="Include" />
+          <e p="SqlServerDbContextServiceCollectionExtensions.cs" t="Include" />
+          <e p="Steeltoe.CloudFoundry.Connector.EF6Core.csproj" t="IncludeRecursive" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netstandard2.0" t="Include">
+                <e p="Steeltoe.CloudFoundry.Connector.EF6Core.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Connector.EFCore" t="IncludeRecursive">
+          <e p="EntityFrameworkCoreTypeLocator.cs" t="Include" />
+          <e p="MigrateDbContextTask.cs" t="Include" />
+          <e p="MySqlDbContextOptionsExtensions.cs" t="Include" />
+          <e p="PostgresDbContextOptionsExtensions.cs" t="Include" />
+          <e p="SqlServerDbContextOptionsExtensions.cs" t="Include" />
+          <e p="Steeltoe.CloudFoundry.Connector.EFCore.csproj" t="IncludeRecursive" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netstandard2.0" t="Include">
+                <e p="Steeltoe.CloudFoundry.Connector.EFCore.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="ConnectorAutofac" t="IncludeRecursive">
+          <e p="ElasticSearchContainerBuilderExtensions.cs" t="Include" />
+          <e p="HystrixContainerBuilderExtensions.cs" t="Include" />
+          <e p="MongoDbContainerBuilderExtensions.cs" t="Include" />
+          <e p="MySqlContainerBuilderExtensions.cs" t="Include" />
+          <e p="OAuthContainerBuilderExtensions.cs" t="Include" />
+          <e p="PostgreSqlContainerBuilderExtensions.cs" t="Include" />
+          <e p="RabbitMQContainerBuilderExtensions.cs" t="Include" />
+          <e p="RedisContainerBuilderExtensions.cs" t="Include" />
+          <e p="SqlServerContainerBuilderExtensions.cs" t="Include" />
+          <e p="Steeltoe.CloudFoundry.ConnectorAutofac.csproj" t="IncludeRecursive" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netstandard2.0" t="Include">
+                <e p="Steeltoe.CloudFoundry.ConnectorAutofac.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="ConnectorBase" t="IncludeRecursive">
+          <e p="AbstractServiceConnectorOptions.cs" t="Include" />
+          <e p="App" t="Include">
+            <e p="ApplicationInstanceInfo.cs" t="Include" />
+            <e p="IApplicationInstanceInfo.cs" t="Include" />
+          </e>
+          <e p="Cache" t="Include">
+            <e p="RedisCacheConfigurationExtensions.cs" t="Include" />
+            <e p="RedisCacheConfigurer.cs" t="Include" />
+            <e p="RedisCacheConnectorOptions.cs" t="Include" />
+            <e p="RedisHealthContributor.cs" t="Include" />
+            <e p="RedisServiceConnectorFactory.cs" t="Include" />
+            <e p="RedisTypeLocator.cs" t="Include" />
+          </e>
+          <e p="CircuitBreaker" t="Include">
+            <e p="HystrixConnectionFactory.cs" t="Include" />
+            <e p="HystrixProviderConfigurer.cs" t="Include" />
+            <e p="HystrixProviderConnectorFactory.cs" t="Include" />
+            <e p="HystrixProviderConnectorOptions.cs" t="Include" />
+          </e>
+          <e p="CloudFoundryServiceInfoCreator.cs" t="Include" />
+          <e p="ConnectorException.cs" t="Include" />
+          <e p="ConnectorHelpers.cs" t="Include" />
+          <e p="ConnectorIOptions.cs" t="Include" />
+          <e p="DocumentDB" t="Include">
+            <e p="ElasticSearch" t="Include">
+              <e p="ElasticSearchConnectorFactory.cs" t="Include" />
+              <e p="ElasticSearchConnectorOptions.cs" t="Include" />
+              <e p="ElasticSearchHealthContributor.cs" t="Include" />
+              <e p="ElasticSearchProviderConfigurer.cs" t="Include" />
+              <e p="ElasticSearchTypeLocator.cs" t="Include" />
+            </e>
+            <e p="MongoDb" t="Include">
+              <e p="MongoDbConnectorFactory.cs" t="Include" />
+              <e p="MongoDbConnectorOptions.cs" t="Include" />
+              <e p="MongoDbHealthContributor.cs" t="Include" />
+              <e p="MongoDbProviderConfigurer.cs" t="Include" />
+              <e p="MongoDbTypeLocator.cs" t="Include" />
+            </e>
+          </e>
+          <e p="IConfigurationExtensions.cs" t="Include" />
+          <e p="OAuth" t="Include">
+            <e p="OAuthConfigurer.cs" t="Include" />
+            <e p="OAuthConnectorDefaults.cs" t="Include" />
+            <e p="OAuthConnectorFactory.cs" t="Include" />
+            <e p="OAuthConnectorOptions.cs" t="Include" />
+            <e p="OAuthServiceOptions.cs" t="Include" />
+          </e>
+          <e p="Properties" t="Include">
+            <e p="AssemblyInfo.cs" t="Include" />
+          </e>
+          <e p="Queue" t="Include">
+            <e p="RabbitMQHealthContributor.cs" t="Include" />
+            <e p="RabbitMQProviderConfigurer.cs" t="Include" />
+            <e p="RabbitMQProviderConnectorFactory.cs" t="Include" />
+            <e p="RabbitMQProviderConnectorOptions.cs" t="Include" />
+            <e p="RabbitMQTypeLocator.cs" t="Include" />
+          </e>
+          <e p="README.md" t="Include" />
+          <e p="Relational" t="Include">
+            <e p="MySql" t="Include">
+              <e p="EF6" t="Include">
+                <e p="MySqlDbContextConnectorFactory.cs" t="Include" />
+              </e>
+              <e p="MySqlProviderConfigurer.cs" t="Include" />
+              <e p="MySqlProviderConnectorFactory.cs" t="Include" />
+              <e p="MySqlProviderConnectorOptions.cs" t="Include" />
+              <e p="MySqlTypeLocator.cs" t="Include" />
+            </e>
+            <e p="PostgreSQL" t="Include">
+              <e p="PostgreSqlTypeLocator.cs" t="Include" />
+              <e p="PostgresProviderConfigurer.cs" t="Include" />
+              <e p="PostgresProviderConnectorFactory.cs" t="Include" />
+              <e p="PostgresProviderConnectorOptions.cs" t="Include" />
+            </e>
+            <e p="RelationalHealthContributor.cs" t="Include" />
+            <e p="SqlServer" t="Include">
+              <e p="EF6" t="Include">
+                <e p="SqlServerDbContextConnectorFactory.cs" t="Include" />
+              </e>
+              <e p="SqlServerProviderConfigurer.cs" t="Include" />
+              <e p="SqlServerProviderConnectorFactory.cs" t="Include" />
+              <e p="SqlServerProviderConnectorOptions.cs" t="Include" />
+              <e p="SqlServerTypeLocator.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Services" t="Include">
+            <e p="DB2ServiceInfo.cs" t="Include" />
+            <e p="DB2ServiceInfoFactory.cs" t="Include" />
+            <e p="ElasticSearchServiceInfo.cs" t="Include" />
+            <e p="ElasticSearchServiceInfoFactory.cs" t="Include" />
+            <e p="EurekaServiceInfo.cs" t="Include" />
+            <e p="EurekaServiceInfoFactory.cs" t="Include" />
+            <e p="HystrixRabbitMQServiceInfo.cs" t="Include" />
+            <e p="HystrixRabbitMQServiceInfoFactory.cs" t="Include" />
+            <e p="IServiceInfo.cs" t="Include" />
+            <e p="IServiceInfoFactory.cs" t="Include" />
+            <e p="MongoDbServiceInfo.cs" t="Include" />
+            <e p="MongoDbServiceInfoFactory.cs" t="Include" />
+            <e p="MySqlServiceInfo.cs" t="Include" />
+            <e p="MySqlServiceInfoFactory.cs" t="Include" />
+            <e p="OracleServiceInfo.cs" t="Include" />
+            <e p="OracleServiceInfoFactory.cs" t="Include" />
+            <e p="PostgresServiceInfo.cs" t="Include" />
+            <e p="PostgresServiceInfoFactory.cs" t="Include" />
+            <e p="RabbitMQServiceInfo.cs" t="Include" />
+            <e p="RabbitMQServiceInfoFactory.cs" t="Include" />
+            <e p="RedisServiceInfo.cs" t="Include" />
+            <e p="RedisServiceInfoFactory.cs" t="Include" />
+            <e p="RelationalServiceInfoFactory.cs" t="Include" />
+            <e p="ServiceInfo.cs" t="Include" />
+            <e p="ServiceInfoFactory.cs" t="Include" />
+            <e p="ServiceInfoFactoryAttribute.cs" t="Include" />
+            <e p="SqlServerServiceInfo.cs" t="Include" />
+            <e p="SqlServerServiceInfoFactory.cs" t="Include" />
+            <e p="SsoServiceInfo.cs" t="Include" />
+            <e p="SsoServiceInfoFactory.cs" t="Include" />
+            <e p="Tags.cs" t="Include" />
+            <e p="UriInfo.cs" t="Include" />
+            <e p="UriServiceInfo.cs" t="Include" />
+          </e>
+          <e p="Steeltoe.CloudFoundry.ConnectorBase.csproj" t="IncludeRecursive" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netstandard2.0" t="Include">
+                <e p="Steeltoe.CloudFoundry.ConnectorBase.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="ConnectorCore" t="IncludeRecursive">
+          <e p="ElasticSearchServiceCollectionExtensions.cs" t="Include" />
+          <e p="HystrixProviderServiceCollectionExtensions.cs" t="Include" />
+          <e p="MongoDbProviderServiceCollectionExtensions.cs" t="Include" />
+          <e p="MySqlProviderServiceCollectionExtensions.cs" t="Include" />
+          <e p="MySqlServiceCollectionExtensions.cs" t="Include" />
+          <e p="OAuthServiceCollectionExtensions.cs" t="Include" />
+          <e p="PostgresProviderServiceCollectionExtensions.cs" t="Include" />
+          <e p="PostgresServiceCollectionExtensions.cs" t="Include" />
+          <e p="RabbitMQProviderServiceCollectionExtensions.cs" t="Include" />
+          <e p="RedisCacheServiceCollectionExtensions.cs" t="Include" />
+          <e p="SqlServerProviderServiceCollectionExtensions.cs" t="Include" />
+          <e p="SqlServerServiceCollectionExtensions.cs" t="Include" />
+          <e p="Steeltoe.CloudFoundry.ConnectorCore.csproj" t="IncludeRecursive" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netstandard2.0" t="Include">
+                <e p="Steeltoe.CloudFoundry.ConnectorCore.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="test" t="Include">
+        <e p="Connector.EF6Autofac.Net4Test" t="IncludeRecursive">
+          <e p="GoodMySqlDbContext.cs" t="Include" />
+          <e p="GoodSqlServerDbContext.cs" t="Include" />
+          <e p="MySqlDbContextContainerBuilderExtensionsTest.cs" t="Include" />
+          <e p="MySqlTypeLocatorTest.cs" t="Include" />
+          <e p="SqlServerDbContextContainerBuilderExtensionsTest.cs" t="Include" />
+          <e p="Steeltoe.CloudFoundry.Connector.EF6Autofac.Test.csproj" t="IncludeRecursive" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="net461" t="Include">
+                <e p="win-x64" t="Include">
+                  <e p="Steeltoe.CloudFoundry.Connector.EF6Autofac.Test.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="xunit.runner.json" t="Include" />
+        </e>
+        <e p="Connector.EF6Core.Net4Test" t="IncludeRecursive">
+          <e p="BadMySqlDbContext.cs" t="Include" />
+          <e p="BadSqlServerDbContext.cs" t="Include" />
+          <e p="Good2MySqlDbContext.cs" t="Include" />
+          <e p="Good2SqlServerDbContext.cs" t="Include" />
+          <e p="GoodMySqlDbContext.cs" t="Include" />
+          <e p="GoodSqlServerDbContext.cs" t="Include" />
+          <e p="MySqlDbContextConnectorFactoryTest.cs" t="Include" />
+          <e p="MySqlDbContextServiceCollectionExtensionsTest.cs" t="Include" />
+          <e p="MySqlTestHelpers.cs" t="Include" />
+          <e p="MySqlTypeLocatorTest.cs" t="Include" />
+          <e p="SqlServerDbContextConnectorFactoryTest.cs" t="Include" />
+          <e p="SqlServerDbContextServiceCollectionExtensionsTest.cs" t="Include" />
+          <e p="SqlServerTestHelpers.cs" t="Include" />
+          <e p="Steeltoe.CloudFoundry.Connector.EF6Core.Test.csproj" t="IncludeRecursive" />
+          <e p="TestHelpers.cs" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="net461" t="Include">
+                <e p="win-x64" t="Include">
+                  <e p="Steeltoe.CloudFoundry.Connector.EF6Core.Test.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="xunit.runner.json" t="Include" />
+        </e>
+        <e p="Connector.EFCore.Test" t="IncludeRecursive">
+          <e p="EntityFrameworkCoreTypeLocatorTest.cs" t="Include" />
+          <e p="GoodDbContext.cs" t="Include" />
+          <e p="MySqlDbContextOptionsExtensionsTest.cs" t="Include" />
+          <e p="MySqlTestHelpers.cs" t="Include" />
+          <e p="MySqlTypeLocatorTest.cs" t="Include" />
+          <e p="PostgresDbContextOptionsExtensionsTest.cs" t="Include" />
+          <e p="PostgresTestHelpers.cs" t="Include" />
+          <e p="SqlServerDbContextOptionsExtensionsTest.cs" t="Include" />
+          <e p="SqlServerTestHelpers.cs" t="Include" />
+          <e p="Steeltoe.CloudFoundry.Connector.EFCore.Test.csproj" t="IncludeRecursive" />
+          <e p="TestHelpers.cs" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp2.1" t="Include">
+                <e p="Steeltoe.CloudFoundry.Connector.EFCore.Test.AssemblyInfo.cs" t="Include" />
+                <e p="Steeltoe.CloudFoundry.Connector.EFCore.Test.Program.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="xunit.runner.json" t="Include" />
+        </e>
+        <e p="ConnectorAutofac.Test" t="IncludeRecursive">
+          <e p="HystrixContainerBuilderExtensionsTest.cs" t="Include" />
+          <e p="MongoDbContainerBuilderExtensionsTest.cs" t="Include" />
+          <e p="MySqlContainerBuilderExtensionsTest.cs" t="Include" />
+          <e p="MySqlTypeLocatorTest.cs" t="Include" />
+          <e p="OAuthContainerBuilderExtensionsTest.cs" t="Include" />
+          <e p="PostgreSqlContainerBuilderExtensionsTest.cs" t="Include" />
+          <e p="RabbitMQContainerBuilderExtensionsTest.cs" t="Include" />
+          <e p="RedisContainerBuilderExtensionsTest.cs" t="Include" />
+          <e p="SqlServerContainerBuilderExtensionsTest.cs" t="Include" />
+          <e p="Steeltoe.CloudFoundry.ConnectorAutofac.Test.csproj" t="IncludeRecursive" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp2.1" t="Include">
+                <e p="Steeltoe.CloudFoundry.ConnectorAutofac.Test.AssemblyInfo.cs" t="Include" />
+                <e p="Steeltoe.CloudFoundry.ConnectorAutofac.Test.Program.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="ConnectorBase.Test" t="IncludeRecursive">
+          <e p="AbstractServiceConfigurationTest.cs" t="Include" />
+          <e p="App" t="Include">
+            <e p="ApplicationInstanceInfoTest.cs" t="Include" />
+          </e>
+          <e p="Cache" t="Include">
+            <e p="RedisCacheConfigurerTest.cs" t="Include" />
+            <e p="RedisCacheConnectorOptionsTest.cs" t="Include" />
+            <e p="RedisCacheTestHelpers.cs" t="Include" />
+            <e p="RedisHealthContributorTest.cs" t="Include" />
+            <e p="RedisServiceConnectorFactoryTest.cs" t="Include" />
+            <e p="RedisTypeLocatorTest.cs" t="Include" />
+          </e>
+          <e p="CircuitBreaker" t="Include">
+            <e p="HystrixProviderConfigurationTest.cs" t="Include" />
+            <e p="HystrixProviderConfigurerTest.cs" t="Include" />
+            <e p="HystrixProviderConnectorFactoryTest.cs" t="Include" />
+          </e>
+          <e p="CloudFoundryServiceInfoCreatorTest.cs" t="Include" />
+          <e p="ConnectorExceptionTest.cs" t="Include" />
+          <e p="DocumentDB" t="Include">
+            <e p="ElasticSearch" t="Include">
+              <e p="ElasticSearchHealthContributorTest.cs" t="Include" />
+              <e p="ElasticSearchTypeLocatorTest.cs" t="Include" />
+            </e>
+            <e p="MongoDb" t="Include">
+              <e p="MongoDbConnectorFactoryTest.cs" t="Include" />
+              <e p="MongoDbConnectorOptionsTest.cs" t="Include" />
+              <e p="MongoDbHealthContributorTest.cs" t="Include" />
+              <e p="MongoDbProviderConfigurerTest.cs" t="Include" />
+              <e p="MongoDbTestHelpers.cs" t="Include" />
+              <e p="MongoDbTypeLocatorTest.cs" t="Include" />
+            </e>
+          </e>
+          <e p="OAuth" t="Include">
+            <e p="OAuthConfigurerTest.cs" t="Include" />
+            <e p="OAuthConnectorFactoryTest.cs" t="Include" />
+            <e p="OAuthConnectorOptionsTest.cs" t="Include" />
+          </e>
+          <e p="Queue" t="Include">
+            <e p="RabbitMQConfigurerTest.cs" t="Include" />
+            <e p="RabbitMQHealthContributorTest.cs" t="Include" />
+            <e p="RabbitMQProviderConnectorOptionsTest.cs" t="Include" />
+            <e p="RabbitMQServiceConnectorFactoryTest.cs" t="Include" />
+            <e p="RabbitMQTypeLocatorTest.cs" t="Include" />
+          </e>
+          <e p="Relational" t="Include">
+            <e p="MySql" t="Include">
+              <e p="MySqlProviderConfigurerTest.cs" t="Include" />
+              <e p="MySqlProviderConnectorFactoryTest.cs" t="Include" />
+              <e p="MySqlProviderConnectorOptionsTest.cs" t="Include" />
+              <e p="MySqlTestHelpers.cs" t="Include" />
+              <e p="MySqlTypeLocatorTest.cs" t="Include" />
+            </e>
+            <e p="PostgreSQL" t="Include">
+              <e p="PostgreSqlTypeLocatorTest.cs" t="Include" />
+              <e p="PostgresProviderConfigurerTest.cs" t="Include" />
+              <e p="PostgresProviderConnectorFactoryTest.cs" t="Include" />
+              <e p="PostgresProviderConnectorOptionsTest.cs" t="Include" />
+              <e p="PostgresTestHelpers.cs" t="Include" />
+            </e>
+            <e p="RelationalHealthContributorTest.cs" t="Include" />
+            <e p="SqlServer" t="Include">
+              <e p="SqlServerProviderConfigurerTest.cs" t="Include" />
+              <e p="SqlServerProviderConnectorFactoryTest.cs" t="Include" />
+              <e p="SqlServerProviderConnectorOptionsTest.cs" t="Include" />
+              <e p="SqlServerTestHelpers.cs" t="Include" />
+              <e p="SqlServerTypeLocatorTest.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Services" t="Include">
+            <e p="DB2ServiceInfoFactoryTest.cs" t="Include" />
+            <e p="DB2ServiceInfoTest.cs" t="Include" />
+            <e p="EurekaServiceInfoFactoryTest.cs" t="Include" />
+            <e p="EurekaServiceInfoTest.cs" t="Include" />
+            <e p="HystrixRabbitMQServiceInfoFactoryTest.cs" t="Include" />
+            <e p="HystrixRabbitMQServiceInfoTest.cs" t="Include" />
+            <e p="MongoDbServiceInfoFactoryTest.cs" t="Include" />
+            <e p="MongoDbServiceInfoTest.cs" t="Include" />
+            <e p="MySqlServiceInfoFactoryTest.cs" t="Include" />
+            <e p="MySqlServiceInfoTest.cs" t="Include" />
+            <e p="OracleServiceInfoFactoryTest.cs" t="Include" />
+            <e p="OracleServiceInfoTest.cs" t="Include" />
+            <e p="PostgresServiceInfoTest.cs" t="Include" />
+            <e p="PostgressServiceInfoFactory.cs" t="Include" />
+            <e p="RabbitMQServiceInfoFactoryTest.cs" t="Include" />
+            <e p="RabbitMQServiceInfoTest.cs" t="Include" />
+            <e p="RedisServiceInfoFactoryTest.cs" t="Include" />
+            <e p="RedisServiceInfoTest.cs" t="Include" />
+            <e p="ServiceInfoFactoryTest.cs" t="Include" />
+            <e p="ServiceInfoTest.cs" t="Include" />
+            <e p="SqlServerInfoFactoryTest.cs" t="Include" />
+            <e p="SqlServerInfoTest.cs" t="Include" />
+            <e p="SsoServiceInfoFactoryTest.cs" t="Include" />
+            <e p="SsoServiceInfoTest.cs" t="Include" />
+            <e p="TagsTest.cs" t="Include" />
+            <e p="TestServiceInfo.cs" t="Include" />
+            <e p="TestServiceInfoFactory.cs" t="Include" />
+            <e p="TestUriServiceInfo.cs" t="Include" />
+            <e p="UriInfoTest.cs" t="Include" />
+            <e p="UriServiceInfoTest.cs" t="Include" />
+          </e>
+          <e p="Steeltoe.CloudFoundry.ConnectorBase.Test.csproj" t="IncludeRecursive" />
+          <e p="TestHelpers.cs" t="Include" />
+          <e p="TestServiceConfiguration.cs" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp2.1" t="Include">
+                <e p="Steeltoe.CloudFoundry.ConnectorBase.Test.AssemblyInfo.cs" t="Include" />
+                <e p="Steeltoe.CloudFoundry.ConnectorBase.Test.Program.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="xunit.runner.json" t="Include" />
+        </e>
+        <e p="ConnectorCore.Test" t="IncludeRecursive">
+          <e p="ConnectorIOptionsTest.cs" t="Include" />
+          <e p="ElasticSearchProviderServiceCollectionExtensionsTest.cs" t="Include" />
+          <e p="ElasticSearchTestHelpers.cs" t="Include" />
+          <e p="HystrixProviderServiceCollectionExtensionsTest.cs" t="Include" />
+          <e p="MongoDbProviderServiceCollectionExtensionsTest.cs" t="Include" />
+          <e p="MongoDbTestHelpers.cs" t="Include" />
+          <e p="MySqlProviderServiceCollectionExtensionsTest.cs" t="Include" />
+          <e p="MySqlServiceCollectionExtensionsTest.cs" t="Include" />
+          <e p="MySqlTestHelpers.cs" t="Include" />
+          <e p="MySqlTypeLocatorTest.cs" t="Include" />
+          <e p="OAuthServiceCollectionExtensionsTest.cs" t="Include" />
+          <e p="PostgreSqlServiceCollectionExtensionsTest.cs" t="Include" />
+          <e p="PostgresProviderServiceCollectionExtensionsTest.cs" t="Include" />
+          <e p="PostgresTestHelpers.cs" t="Include" />
+          <e p="RabbitMQServiceCollectionExtensionsTest.cs" t="Include" />
+          <e p="RedisCacheConfigurationExtensionsTest.cs" t="Include" />
+          <e p="RedisCacheServiceCollectionExtensionsTest.cs" t="Include" />
+          <e p="RedisCacheTestHelpers.cs" t="Include" />
+          <e p="SqlServerProviderServiceCollectionExtensionsTest.cs" t="Include" />
+          <e p="SqlServerServiceCollectionExtensionsTest.cs" t="Include" />
+          <e p="SqlServerTestHelpers.cs" t="Include" />
+          <e p="Steeltoe.CloudFoundry.ConnectorCore.Test.csproj" t="IncludeRecursive" />
+          <e p="TestHelpers.cs" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp2.1" t="Include">
+                <e p="Steeltoe.CloudFoundry.ConnectorCore.Test.AssemblyInfo.cs" t="Include" />
+                <e p="Steeltoe.CloudFoundry.ConnectorCore.Test.Program.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="xunit.runner.json" t="Include" />
+        </e>
+      </e>
+    </e>
+    <e p="$PROJECT_DIR$/../../stylecop.json" t="Include" />
+    <e p="$PROJECT_DIR$/../../targetframework.props" t="Include" />
+    <e p="$PROJECT_DIR$/../../versions.props" t="Include" />
+  </component>
+</project>

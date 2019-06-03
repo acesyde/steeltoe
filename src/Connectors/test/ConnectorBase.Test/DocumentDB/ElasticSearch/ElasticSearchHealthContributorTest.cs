@@ -27,7 +27,7 @@ namespace Steeltoe.CloudFoundry.Connector.ElasticSearch.Test
         private readonly Type _implementationType = ElasticSearchTypeLocator.ElasticClient;
 
         [Fact]
-        public void GetMongoDbContributor_ReturnsContributor()
+        public void GetElasticSearchContributor_ReturnsContributor()
         {
             var appsettings = new Dictionary<string, string>
             {
@@ -66,7 +66,7 @@ namespace Steeltoe.CloudFoundry.Connector.ElasticSearch.Test
         public void Is_Connected_Returns_Up_Status()
         {
             // arrange
-            ElasticSearchConnectorOptions config = new ElasticSearchConnectorOptions();
+            var config = new ElasticSearchConnectorOptions();
             var info = new ElasticSearchServiceInfo("MyId", "http://localhost:9200");
             var logrFactory = new LoggerFactory();
             var connFactory = new ElasticSearchConnectorFactory(info, config, _implementationType);
