@@ -47,24 +47,24 @@ namespace Steeltoe.CloudFoundry.Connector.ElasticSearch
         /// Gets IElasticClient from Nest Library
         /// </summary>
         /// <exception cref="ConnectorException">When type is not found</exception>
-        public static Type IElasticSearchClient => ConnectorHelpers.FindTypeOrThrow(Assemblies, ConnectionInterfaceTypeNames, "IElasticClient", "an ElasticSearch driver");
+        public static Type IElasticClient => ConnectorHelpers.FindTypeOrThrow(Assemblies, ConnectionInterfaceTypeNames, "IElasticClient", "an NEST driver");
 
         /// <summary>
         /// Gets ElasticClient from Nest Library
         /// </summary>
         /// <exception cref="ConnectorException">When type is not found</exception>
-        public static Type ElasticSearchClient => ConnectorHelpers.FindTypeOrThrow(Assemblies, ConnectionTypeNames, "ElasticClient", "an ElasticSearch driver");
+        public static Type ElasticClient => ConnectorHelpers.FindTypeOrThrow(Assemblies, ConnectionTypeNames, "ElasticClient", "an NEST driver");
 
         /// <summary>
-        /// Gets MongoUrl from Nest Library
+        /// Gets ElasticSearchUrl from Nest Library
         /// </summary>
         /// <exception cref="ConnectorException">When type is not found</exception>
-        public static Type ElasticSearchUrl => ConnectorHelpers.FindTypeOrThrow(Assemblies, ElasticSearchConnectionInfo, "ElasticSearchUrl", "an ElasticSearch driver");
+        public static Type ElasticSearchUrl => ConnectorHelpers.FindTypeOrThrow(Assemblies, ElasticSearchConnectionInfo, "ElasticSearchUrl", "an NEST driver");
 
         /// <summary>
         /// Gets a method that lists databases available in a ElasticSearchClient
         /// </summary>
-        public static MethodInfo ListDatabasesMethod => FindMethodOrThrow(ElasticSearchClient, "ListDatabases", new Type[] { typeof(CancellationToken) });
+        public static MethodInfo ListDatabasesMethod => FindMethodOrThrow(ElasticClient, "ListDatabases", new Type[] { typeof(CancellationToken) });
 
         private static MethodInfo FindMethodOrThrow(Type type, string methodName, Type[] parameters = null)
         {

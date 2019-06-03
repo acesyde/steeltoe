@@ -61,11 +61,10 @@ namespace Steeltoe.CloudFoundry.Connector.ElasticSearch
 
         public string Password { get; set; }
 
-        public string Database { get; set; }
-
         internal string Uri { get; set; }
 
         internal Dictionary<string, string> Options { get; set; }
+        
         public bool Ssl { get; set; }
 
         public override string ToString()
@@ -93,12 +92,6 @@ namespace Steeltoe.CloudFoundry.Connector.ElasticSearch
 
                 AddColonDelimitedPair(sb, Username, Password, '@');
                 AddColonDelimitedPair(sb, Server, Port.ToString());
-
-                if (!string.IsNullOrEmpty(Database))
-                {
-                    sb.Append("/");
-                    sb.Append(Database);
-                }
 
                 if (Options != null && Options.Any())
                 {

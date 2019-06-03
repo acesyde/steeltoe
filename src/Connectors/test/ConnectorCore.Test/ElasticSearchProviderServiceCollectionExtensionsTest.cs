@@ -1,16 +1,31 @@
-﻿using System;
-using System.Collections;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using MongoDB.Driver;
-using Nest;
-using Steeltoe.CloudFoundry.Connector.Test;
-using Steeltoe.Common.HealthChecks;
-using Steeltoe.Extensions.Configuration.CloudFoundry;
-using Xunit;
+﻿// Copyright 2017 the original author or authors.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+// https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
 
 namespace Steeltoe.CloudFoundry.Connector.ElasticSearch.Test
 {
+    using System;
+    using System.Collections;
+    using Elasticsearch.Net;
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.Extensions.DependencyInjection;
+    using MongoDB.Driver;
+    using Nest;
+    using Steeltoe.CloudFoundry.Connector.Test;
+    using Steeltoe.Common.HealthChecks;
+    using Steeltoe.Extensions.Configuration.CloudFoundry;
+    using Xunit;
+
     public class ElasticSearchProviderServiceCollectionExtensionsTest
     {
         public ElasticSearchProviderServiceCollectionExtensionsTest()
@@ -107,7 +122,7 @@ namespace Steeltoe.CloudFoundry.Connector.ElasticSearch.Test
             // Assert
             Assert.NotNull(service);
             var connSettings = service.Settings;
-            Assert.Single((IEnumerable) connSettings.Servers);
+            Assert.Single((IEnumerable)connSettings.Servers);
             Assert.Equal("d8790b7-mongodb-0.node.dc1.a9s-mongodb-consul", connSettings.Server.Host);
             Assert.Equal(27017, connSettings.Server.Port);
             Assert.Equal("a9s-brk-usr-377ad48194cbf0452338737d7f6aa3fb6cdabc24", connSettings.Credential.Username);
@@ -131,9 +146,9 @@ namespace Steeltoe.CloudFoundry.Connector.ElasticSearch.Test
             // Assert
             Assert.NotNull(service);
             var connSettings = service.ConnectionSettings;
-            //Assert.Contains(new MongoServerAddress("d5584e9-mongodb-0.node.dc1.a9s-mongodb-consul", 27017), connSettings.Servers);
-            //Assert.Contains(new MongoServerAddress("d5584e9-mongodb-1.node.dc1.a9s-mongodb-consul", 27017), connSettings.Servers);
-            //Assert.Contains(new MongoServerAddress("d5584e9-mongodb-2.node.dc1.a9s-mongodb-consul", 27017), connSettings.Servers);
+            Assert.Contains(new Node(new Uri("d5584e9-mongodb-0.node.dc1.a9s-mongodb-consul")), connSettings.ConnectionPool.Nodes);
+            Assert.Contains(new Node(new Uri("d5584e9-mongodb-0.node.dc1.a9s-mongodb-consul")), connSettings.ConnectionPool.Nodes);
+            Assert.Contains(new Node(new Uri("d5584e9-mongodb-0.node.dc1.a9s-mongodb-consul")), connSettings.ConnectionPool.Nodes);
             Assert.Equal("a9s-brk-usr-e74b9538ae5dcf04500eb0fc18907338d4610f30", connSettings.BasicAuthenticationCredentials.Username);
             Assert.Equal("a9s-brk-usr-e74b9538ae5dcf04500eb0fc18907338d4610f30", connSettings.BasicAuthenticationCredentials.Password);
         }

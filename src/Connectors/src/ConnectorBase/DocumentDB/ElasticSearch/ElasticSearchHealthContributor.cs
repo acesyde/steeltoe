@@ -31,7 +31,7 @@ namespace Steeltoe.CloudFoundry.Connector.ElasticSearch
                 throw new ArgumentNullException(nameof(configuration));
             }
 
-            Type mongoDbImplementationType = ElasticSearchTypeLocator.ElasticSearchClient;
+            Type mongoDbImplementationType = ElasticSearchTypeLocator.ElasticClient;
             var info = configuration.GetSingletonServiceInfo<ElasticSearchServiceInfo>();
 
             ElasticSearchConnectorOptions connectorOptions = new ElasticSearchConnectorOptions(configuration);

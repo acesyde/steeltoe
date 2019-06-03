@@ -56,7 +56,6 @@ namespace Steeltoe.CloudFoundry.Connector.ElasticSearch
                 }
 
                 configuration.Server = si.Host;
-                configuration.Database = si.Path;
             }
         }
     }

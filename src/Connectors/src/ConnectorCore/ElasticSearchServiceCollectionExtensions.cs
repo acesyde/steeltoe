@@ -12,15 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using System;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Steeltoe.CloudFoundry.Connector.Services;
-using Steeltoe.Common.HealthChecks;
-
 namespace Steeltoe.CloudFoundry.Connector.ElasticSearch
 {
+    using System;
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.Extensions.DependencyInjection;
+    using Microsoft.Extensions.Logging;
+    using Services;
+    using Steeltoe.Common.HealthChecks;
+
     public static class ElasticSearchServiceCollectionExtensions
     {
         /// <summary>
@@ -87,10 +87,10 @@ namespace Steeltoe.CloudFoundry.Connector.ElasticSearch
 
         private static void DoAdd(IServiceCollection services, ElasticSearchServiceInfo info, IConfiguration config, ServiceLifetime contextLifetime, IHealthChecksBuilder healthChecksBuilder)
         {
-            Type elasticSearchClient = ElasticSearchTypeLocator.ElasticSearchClient;
+            Type elasticSearchClient = ElasticSearchTypeLocator.ElasticClient;
             var elasticSearchConnectorOptions = new ElasticSearchConnectorOptions(config);
             var clientFactory = new ElasticSearchConnectorFactory(info, elasticSearchConnectorOptions, elasticSearchClient);
-            services.Add(new ServiceDescriptor(ElasticSearchTypeLocator.IElasticSearchClient, clientFactory.Create, contextLifetime));
+            services.Add(new ServiceDescriptor(ElasticSearchTypeLocator.IElasticClient, clientFactory.Create, contextLifetime));
             services.Add(new ServiceDescriptor(elasticSearchClient, clientFactory.Create, contextLifetime));
             if (healthChecksBuilder == null)
             {
